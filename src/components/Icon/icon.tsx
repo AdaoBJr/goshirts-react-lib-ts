@@ -1,14 +1,15 @@
+import { ComponentType, MouseEvent, MouseEventHandler } from 'react';
 import { IconBaseProps } from 'react-icons';
 import { useStyle } from '../../services/hooks';
 import defaultClasses from './icon.module.css';
 
 interface IconProps {
-  icon: React.ComponentType<IconBaseProps>;
+  icon: ComponentType<IconBaseProps>;
   id: string;
   size?: number;
   width?: number;
   active?: boolean;
-  onClick?: React.MouseEventHandler<SVGAElement>;
+  onClick?: any;
   styleIcon?: Object;
   classes?: Object;
 }
