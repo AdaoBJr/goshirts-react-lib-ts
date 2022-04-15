@@ -1,13 +1,13 @@
 import { useState, useRef, useCallback } from 'react';
 import { useEventListener } from '../hooks';
 
-interface dropdownData {
+export interface dropdownData {
   key: string;
   label: string;
   value: string;
 }
 
-interface useDropdownProps {
+export interface useDropdownProps {
   id: string;
   items: dropdownData[];
   onValueChange: Function;
