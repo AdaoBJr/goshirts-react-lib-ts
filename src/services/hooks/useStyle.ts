@@ -2,8 +2,8 @@ import { shallowMerge } from '../utils';
 
 interface useStyleProps {
   defaultClasses: Object;
-  classes: Object;
-  className: string;
+  classes?: Object;
+  className?: string;
 }
 
 const useStyle = (props: useStyleProps) => {
