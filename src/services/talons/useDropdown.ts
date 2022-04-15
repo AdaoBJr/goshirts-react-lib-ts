@@ -2,9 +2,9 @@ import { useState, useRef, useCallback } from 'react';
 import { useEventListener } from '../hooks';
 
 export interface dropdownData {
-  key: string;
+  key: number | string;
   label: string;
-  value: string;
+  value: number | string | boolean;
 }
 
 export interface useDropdownProps {
@@ -23,7 +23,7 @@ const useDropdown = (props: useDropdownProps) => {
   const [itemActive, setItemActive] = useState<string>('Selecione');
 
   const handleClick = useCallback(
-    (value: string) => {
+    (value: string | number | boolean) => {
       const findOption = items.find(item => item.value == value);
       if (findOption) {
         setItemActive(findOption.label);
