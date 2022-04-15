@@ -1,5 +1,5 @@
 .root {
-  composes: root from '@goshirts-react/lib/components/InputText/inputText.module.css';
+  composes: root from '@goshirts-react/lib/src/components/InputText/inputText.module.css';
   font-size: 0.9rem;
   position: relative;
 }
