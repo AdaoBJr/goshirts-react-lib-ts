@@ -6,7 +6,9 @@
   "author": "AdaoBJr <adaobjr@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "typescript-plugin-css-modules": "^3.4.0",
-    "typescript": "^4.6.3"
+    "@types/react-icons": "^3.0.0",
+    "csstype": "^3.0.11",
+    "typescript": "^4.6.3",
+    "typescript-plugin-css-modules": "^3.4.0"
   }
 }
